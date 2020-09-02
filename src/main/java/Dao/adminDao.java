@@ -10,6 +10,8 @@ public class adminDao implements demoCS3DAO<Admin> {
     private String jdbcPassword="123456";
 
     private static final String SELECT_ALL_ADMIN = "select * from admin";
+    private static final String DELETE_ADMIN_BY_ID = "delete from admin where = ?;";
+    private static final String UPDATE_ADMIN_SQL = "update admin set id=?, name=?, passWord=? ";
 
 
 
@@ -26,12 +28,12 @@ public class adminDao implements demoCS3DAO<Admin> {
     }
 
     @Override
-    public boolean update(Admin admin) {
-        return false;
+    public void update(Admin admin) {
+
     }
 
     @Override
-    public boolean delete(int id) {
-        return false;
+    public void delete(int id) {
+
     }
 }
