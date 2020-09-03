@@ -28,12 +28,12 @@ public class userDao implements demoCS3DAO<User> {
     }
 
     @Override
-    public void update(User user) {
-
+    public boolean update(User user) {
+        return false;
     }
 
     @Override
-    public void delete(int id) {
-
+    public boolean delete(int id) {
+        return false;
     }
 }

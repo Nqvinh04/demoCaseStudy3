@@ -31,12 +31,12 @@ public class transaction implements demoCS3DAO<Transaction> {
     }
 
     @Override
-    public  void update(Transaction transaction) {
-        
+    public  boolean update(Transaction transaction) {
+        return false;
     }
 
     @Override
-    public  void delete(int id) {
-        
+    public  boolean delete(int id) {
+        return false;
     }
 }

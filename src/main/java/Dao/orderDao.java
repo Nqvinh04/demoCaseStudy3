@@ -28,13 +28,13 @@ public class orderDao implements demoCS3DAO<Order> {
     }
 
     @Override
-    public void update(Order order) {
-
+    public boolean update(Order order) {
+        return false;
     }
 
     @Override
-    public void delete(int id) {
-
+    public boolean delete(int id) {
+        return false;
     }
 
 }

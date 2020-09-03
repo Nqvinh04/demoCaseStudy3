@@ -1,11 +1,12 @@
 package Dao;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface demoCS3DAO<T> {
     // CRUD
     List<T> selectAll();
     void insert(T t);
-    void update(T t);
-    void delete(int id);
+    boolean update(T t) throws SQLException;
+    boolean delete(int id) throws SQLException;
 }

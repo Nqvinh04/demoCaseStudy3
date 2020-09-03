@@ -29,12 +29,12 @@ public class catalogDao implements demoCS3DAO<Catalog> {
     }
 
     @Override
-    public void update(Catalog catalog) {
-        
+    public boolean update(Catalog catalog) {
+        return false;
     }
 
     @Override
-    public void delete(int id) {
-        
+    public boolean delete(int id) {
+        return false;
     }
 }

@@ -4,22 +4,19 @@ import java.util.Date;
 
 public class Product {
     private int id;
-    private int catalog_id;
+//    private int catalog_id;
     private String name;
     private double price;
     private String image_link;
-    private String image_list;
-    private Date created;
 
-    public Product(int id, int catalog_id, String name, double price,
-                   String image_link, String image_list, Date created) {
+
+    public Product(int id, String name, double price,
+                   String image_link) {
         this.id = id;
-        this.catalog_id = catalog_id;
+//        this.catalog_id = catalog_id;
         this.name = name;
         this.price = price;
         this.image_link = image_link;
-        this.image_list = image_list;
-        this.created = created;
     }
 
     public int getId() {
@@ -30,13 +27,13 @@ public class Product {
         this.id = id;
     }
 
-    public int getCatalog_id() {
-        return catalog_id;
-    }
-
-    public void setCatalog_id(int catalog_id) {
-        this.catalog_id = catalog_id;
-    }
+//    public int getCatalog_id() {
+//        return catalog_id;
+//    }
+//
+//    public void setCatalog_id(int catalog_id) {
+//        this.catalog_id = catalog_id;
+//    }
 
     public String getName() {
         return name;
@@ -62,19 +59,19 @@ public class Product {
         this.image_link = image_link;
     }
 
-    public String getImage_list() {
-        return image_list;
-    }
-
-    public void setImage_list(String image_list) {
-        this.image_list = image_list;
-    }
-
-    public Date getCreated() {
-        return created;
-    }
-
-    public void setCreated(Date created) {
-        this.created = created;
-    }
+//    public String getImage_list() {
+//        return image_list;
+//    }
+//
+//    public void setImage_list(String image_list) {
+//        this.image_list = image_list;
+//    }
+//
+//    public Date getCreated() {
+//        return created;
+//    }
+//
+//    public void setCreated(Date created) {
+//        this.created = created;
+//    }
 }
